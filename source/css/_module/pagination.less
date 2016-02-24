@@ -1,0 +1,40 @@
+/*
+
+  pagination
+*/
+
+.pagination {
+  // overflow: auto;
+  margin: 1em auto;
+  font-size: 1.2em;
+  text-align: center;
+  .clearfix();
+  width: auto;
+  color: @light-black;
+  border-top: 1px solid @very-light-gray;
+  padding-top: .5em;
+}
+
+
+.pagination-elem() {
+  display: inline-block;
+  float: left;
+  padding: 0 .5em;
+}
+.page-number, .space, .extend {
+  .pagination-elem();
+}
+.page-number  {
+  &.current {
+    color: @basic-gray;
+  }
+}
+
+.extend {
+  .next {
+
+  }
+  .prev {
+
+  }
+}

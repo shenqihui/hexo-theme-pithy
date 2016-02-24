@@ -1,0 +1,32 @@
+footer[site-footer] {
+  border-top: 1px solid @very-light-gray;
+  margin: 1em auto;
+  padding-top: 1em;
+  color: @light-black;
+  font-size: .8em;
+  [powered], [footer_word], [copyright] {
+    .width-responsive();
+    margin: 0 auto;
+  }
+  div[copyright] {
+    text-align: center;
+    margin-bottom: 1em;
+    h4 {
+      &:before {
+        content: "“"
+      }
+      &:after {
+        content: "”"
+      }
+    }
+  }
+  div[powered] {
+    font-size: 0.75em;
+  }
+  div[footer_word] {
+    font-size: 0.85em;
+    padding-left: .5em;
+    border-left: 3px solid @light-gray;
+  }
+
+}

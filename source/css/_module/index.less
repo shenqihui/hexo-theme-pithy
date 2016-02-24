@@ -1,0 +1,25 @@
+section[index] {
+  div[article-list] article {
+    @article-header-ling-height: 30px;
+    h2 {
+      float: left;
+      line-height: @article-header-ling-height;
+    }
+    time {
+      float: right;
+      margin-left: 3em;
+      line-height: @article-header-ling-height;
+      color: @basic-gray;
+    }
+    [post-excerpt] {
+      .clearfix();
+      color: @basic-gray;
+    }
+
+    padding: 1em 0;
+    border-bottom: 1px solid @very-light-gray;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}

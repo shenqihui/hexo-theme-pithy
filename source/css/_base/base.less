@@ -1,0 +1,159 @@
+/*
+
+	Base
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: @cl-body-bg;
+
+  color: @cl-body-text;
+}
+
+
+
+/*
+
+	Links
+*/
+
+a,
+a:visited {
+  // transition: color .2s ease-in, box-shadow .2s ease-in;
+  text-decoration: none;
+
+  color: @cl-link-active;
+  outline: 0;
+}
+
+a:visited {
+  // color: @cl-link-visited;
+}
+
+a:hover,
+a:focus {
+  color: @cl-link-hover;
+}
+
+p a,
+p a:visited {
+  line-height: inherit;
+}
+
+
+
+/*
+
+	Lists
+*/
+
+ul,
+ol,
+dl {
+  .vertical-margin(0, 1);
+
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li ul,
+li ol,
+ul ul,
+ol ol {
+  top: 0;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+li h1,
+li h2,
+li h3,
+li h4,
+li h5,
+li h6,
+li p {
+  margin-top: 0;
+}
+
+
+/*
+
+  Table
+*/
+
+table {
+  width: 100%;
+}
+
+th {
+  box-shadow: 0 1px 0 0 @cl-border;
+}
+
+th,
+td {
+  padding: 0 5px;
+}
+
+
+
+/*
+
+	Images
+*/
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+
+
+/*
+
+	Misc Helper
+*/
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.is-hidden {
+  display: none;
+}
+

@@ -1,0 +1,75 @@
+/*
+
+  Post
+*/
+section[post] {
+  h2[post-title] {
+    text-align: center;
+    margin: .5em 0;
+  }
+
+  time[post-time] {
+    float: right;
+    margin-left: 3em;
+    color: @basic-gray;
+  }
+
+  img, video {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 4px #bbb;
+    box-shadow: 2px 2px 4px #bbb;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 4px #bbb;
+  }
+}
+div[social-line] {
+  // 暂时隐藏这类需要 js 的动作
+  display: none;
+}
+
+#comments {
+  border: 1px solid @very-light-gray;
+  padding: .5em;
+}
+
+.post-items {
+  .vertical-margin(0, 2);
+
+  list-style-type: none;
+}
+
+.post-item {
+  .vertical-margin(0, 1);
+}
+
+.post {
+  .vertical-margin(0, 2);
+}
+
+figure.highlight {
+  .vertical-margin(0, 1);
+
+  overflow: auto;
+}
+
+
+.pagination {
+  [post-prev], [post-next] {
+    display: block;
+  }
+  a[post-prev] {
+    margin-right: 2em;
+    float: left;
+  }
+  a[post-next] {
+    margin-left: 2em;
+    float: right;
+  }
+  
+}

@@ -1,0 +1,244 @@
+
+/*
+
+	Base
+*/
+
+body {
+  .font-measure();
+
+  font-family: @ff-base;
+
+  -webkit-text-size-adjust: 100%;
+}
+
+
+/*
+
+	Headings
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: @ff-heading;
+  font-weight: 200;
+
+  margin: 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  .font-measure(1.25);
+
+  font-weight: 800;
+}
+
+h2 {
+  .font-measure(1.5, 2);
+}
+
+h3 {
+  .font-measure(1.25, 2);
+}
+
+
+
+
+/*
+
+	Paragraphs
+*/
+
+p,
+address {
+  .font-measure(1);
+  .vertical-margin(0, 1);
+}
+
+p img {
+  margin: 0;
+}
+
+
+
+
+/*
+
+	Emphasis
+*/
+
+cite,
+dfn,
+em,
+i {
+  font-style: italic;
+}
+
+b,
+strong,
+dt,
+legend {
+  font-weight: 800;
+}
+
+small {
+  .font-measure(.75, 2);
+}
+
+del {
+  text-decoration: line-through;
+}
+
+ins {
+  color: @cl-highlight;
+}
+
+
+
+/*
+
+	Form
+*/
+
+form,
+legend,
+label {
+  .font-measure(1);
+}
+
+
+
+
+/*
+
+  Table
+*/
+
+table caption,
+tfoot {
+  .font-measure(.75, 1);
+}
+
+th {
+  font-weight: 600;
+
+  text-align: left;
+}
+
+
+
+/*
+
+  Code
+*/
+
+code,
+kbd,
+samp,
+pre,
+tt,
+var {
+  font-family: @ff-code;
+  font-weight: 400;
+}
+
+pre {
+  .font-measure(.75);
+
+  overflow: auto;
+
+  margin: 0;
+
+  white-space: pre;
+}
+
+pre code {
+  background: @cl-code-bg;
+
+  .vertical-margin(0, 1.334);
+
+  display: block;
+  overflow: auto;
+
+  padding: 0 .5em;
+}
+
+p,
+li {
+  code {
+    background: @cl-code-bg;
+
+    line-height: 1;
+
+    margin: 0 .25em;
+    padding: 0 .35em;
+  }
+}
+
+
+
+/*
+
+  Quote
+*/
+
+blockquote {
+  font-style: italic;
+
+  position: relative;
+
+  margin: 0;
+  margin-left: -1em;
+  padding-left: 1em;
+
+  color: @cl-border;
+  border-left: dotted .075em @cl-border;
+}
+
+
+q:before {
+  content: "“";
+}
+
+q:after {
+  content: "”";
+}
+
+
+
+/*
+
+  Others
+*/
+
+abbr,
+acronym {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+abbr[title],
+acronym[title],
+dfn[title] {
+  cursor: help;
+}
+
+
+
+hr {
+  height: 1px;
+  border: none;
+  box-shadow: 0 -1px 0 0 @light-gray;
+}
