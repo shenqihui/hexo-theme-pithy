@@ -2,6 +2,8 @@
 
 A new theme for [Hexo](https://hexo.io/).
 
+[主题诞生记（中文的）](http://blog.shenqh.com/2016/02/24/my-hexo-theme-pithy/)
+
 ## Design idea
 What i want:
 
@@ -24,6 +26,15 @@ What i want:
 
 ## Preview
 [Preview](http://blog.shenqh.com), and this is my blog.
+
+Desktop:  
+![desktop](http://blog.shenqh.com/picture/hexo-theme-pithy/desktop.jpg)  
+Desktop archive page:  
+![desktop](http://blog.shenqh.com/picture/hexo-theme-pithy/desktop-archive.jpg)  
+pad:  
+![pad](http://blog.shenqh.com/picture/hexo-theme-pithy/pad.jpg)  
+phone:  
+![phone](http://blog.shenqh.com/picture/hexo-theme-pithy/phone.jpg)  
 
 
 ## Installation
