@@ -1,0 +1,36 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  Link: /link
+  Rss: /atom.xml
+  About: /about
+
+rss: /atom.xml
+
+less:
+  paths:
+    - css/app.less
+
+
+# Miscellaneous
+google_analytics:
+baidu_analytics:
+favicon: /favicon.ico
+twitter: 
+google_plus: 
+fb_admins:
+fb_app_id:
+
+# footer word
+footer_word:
+
+# post excerpt, if define length, it cutting specific length comtent of the origin markdown content.just use default.
+excerpt:
+  enable: true
+  length: 100
+
+# tagcloud, in developing, beign color and end color. just use default.
+tagcloud:
+  start_color: '#777777'
+  end_color: '#111111'
