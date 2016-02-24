@@ -1,0 +1,40 @@
+<section index>
+  <div article-list>
+  <% page.posts.each(function(post){ %>
+    <article class="type-<%= post.layout %> clearfix">
+      <h2 itemprop="name">
+        <a href="<%- url_for(post.path) %>">
+          <%= post.title %>
+        </a>
+      </h2>
+
+      <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished">
+        <%= date(post.date, config.date_format) %>
+      </time>
+
+      <% if(theme.excerpt && theme.excerpt.enable) { %>
+        <div class="clearfix"></div>
+        <% if(theme.excerpt.length) { %>
+          <div post-excerpt post-excerpt-origin>
+            <%= post._content.substr(0, theme.excerpt.length).replace('<!--more-->', '') %>
+          </div>
+        <% } else { %>
+          <div post-excerpt post-excerpt-html>
+            <%- post.excerpt %>
+          </div>
+        <% } %>
+      <% } %>
+
+    </article>
+  <% }) %>
+  </div>
+
+  <% if (page.total > 1){ %>
+    <nav class="pagination">
+      <%- paginator({
+        prev_text: ' &#10094; ',
+        next_text: ' &#10095; '
+      }) %>
+    </nav>
+  <% } %>
+</section>

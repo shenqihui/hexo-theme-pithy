@@ -1,0 +1,15 @@
+<nav class="site-navbar">
+  <ul nav-left>
+    <h1><%= config.title %></h1>
+  </ul>
+  <ul nav-right>
+  <% for (var i in theme.menu){ %>
+    <% var menuUrl = url_for(theme.menu[i]); %>
+    <li>
+      <a href="<%- menuUrl %>" <% if(menuUrl.startsWith('http') || menuUrl.startsWith('//')) { %> target="_blank" <% } %>>
+        <%= i %>
+      </a>
+    </li>
+  <% } %>
+  </ul>
+</nav>
