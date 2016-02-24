@@ -22,7 +22,8 @@ What i want:
 * 
 
 
-[Preview](http://blog.shenqh.con), and this is my blog.
+## Preview
+[Preview](http://blog.shenqh.com), and this is my blog.
 
 
 ## Installation
