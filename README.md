@@ -24,10 +24,6 @@ What i want:
 
 [Preview](http://blog.shenqh.con), and this is my blog.
 
-![]()
-
-![]()
-
 
 ## Installation
 
