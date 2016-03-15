@@ -3,7 +3,6 @@ menu:
   Home: /
   Archives: /archives
   Link: /link
-  Rss: /atom.xml
   About: /about
 
 rss: /atom.xml
