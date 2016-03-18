@@ -33,12 +33,12 @@ div[social-line] {
   display: none;
 }
 
-#comments {
+#comments #disqus_thread, .cp_embed_iframe{
   border: 1px solid @very-light-gray;
   padding: .5em;
-}
-.cp_embed_iframe {
-  border: 1px solid @very-light-gray;
+  &:empty {
+    display: none;
+  }
 }
 
 .post-items {

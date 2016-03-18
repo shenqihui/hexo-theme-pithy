@@ -1,3 +1,7 @@
+<% function isShowFooter() {
+  return page.__index;
+}
+%>
 <section site-body class="dn">
   <% if(theme.tagcloud) { %>
     <nav>
@@ -9,10 +13,14 @@
 <footer site-footer>
   <div copyright>
     &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-    <% if (theme.subtitle){ %>
-      <h4><%= theme.subtitle %></h4>
+
+    <% if(isShowFooter()) { %>
+      <% if (theme.subtitle){ %>
+        <h4><%= theme.subtitle %></h4>
+      <% } %>
     <% } %>
   </div>
+  
   <div powered>
       <b>Hexo <a href="https://github.com/shenqihui/hexo-theme-pithy" target="_blank">Pithy</a></b> Theme designed by <b><a href="http://blog.shenqh.com/" target="_blank">shenqihui</a></b>, Powered by <b><a href="http://hexo.io/" target="_blank">Hexo</a></b> and <b><a href="https://pages.github.com/">Github Pages</a></b>. <b><a href="/sitemap.xml">Sitemap</a></b>.
         <% if(theme.rss) { %>
@@ -20,9 +28,12 @@
       <% } %>
   </div>
 
-  <% if (theme.footer_word) { %>
-    <div footer_word>
-      <%= theme.footer_word %>
-    </div>
+  <% if(isShowFooter()) { %>
+    <% if (theme.footer_word) { %>
+      <br>
+      <div footer_word>
+        <%= theme.footer_word %>
+      </div>
+    <% } %>
   <% } %>
 </footer>
