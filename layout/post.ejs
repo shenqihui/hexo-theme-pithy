@@ -41,13 +41,7 @@
     <%- post.more %>
   </div>
 
-  <div social-line>
-    <a data-url="<%- post.permalink %>" data-id="<%= post._id %>">Share</a>
-    <% if (post.comments && config.disqus_shortname){ %>
-      <a href="<%- post.permalink %>#disqus_thread">Comments</a>
-    <% } %>
-  </div>
-
+  <% if(page.prev || page.next) { %>
   <nav class="pagination">
     <% if(page.prev) { %>
       <a post-prev href="<%= url_for(page.prev.path) %>" title="<%= page.prev.title %>">&#10094; <%= page.prev.title %></a>
@@ -57,9 +51,10 @@
       <a post-next href="<%= url_for(page.next.path) %>" title="<%= page.next.title %>"><%= page.next.title %> &#10095;</a>
     <% } %>
   </nav>
+  <% } %>
 </article>
 
-<% if (post.comments && config.disqus_shortname){ %>
+<% if (post.comments && config.disqus_shortname && post.__post){ %>
   <section id="comments">
     <div id="disqus_thread"></div>
   </section>
