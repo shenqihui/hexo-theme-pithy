@@ -1,7 +1,4 @@
-<% function isShowFooter() {
-  return page.__index;
-}
-%>
+
 <section site-body class="dn">
   <% if(theme.tagcloud) { %>
     <nav>
@@ -14,11 +11,10 @@
   <div copyright>
     &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
 
-    <% if(isShowFooter()) { %>
       <% if (theme.subtitle){ %>
         <h4><%= theme.subtitle %></h4>
       <% } %>
-    <% } %>
+
   </div>
   
   <div powered>
@@ -28,12 +24,11 @@
       <% } %>
   </div>
 
-  <% if(isShowFooter()) { %>
+
     <% if (theme.footer_word) { %>
       <br>
       <div footer_word>
         <%= theme.footer_word %>
       </div>
     <% } %>
-  <% } %>
 </footer>
