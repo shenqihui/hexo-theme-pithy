@@ -38,4 +38,16 @@ footer[site-footer] {
     }
   }
 
+  [copyright] h4, [footer_word] {
+    display: none;
+  }
+
+}
+
+[part-index] {
+  ~ footer[site-footer] {
+    [copyright] h4, [footer_word] {
+      display: block;
+    }
+  }
 }
