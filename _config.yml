@@ -33,3 +33,8 @@ excerpt:
 tagcloud:
   start_color: '#777777'
   end_color: '#111111'
+
+# font config.
+font:
+  body: STFangSong, Helvetica, Arial, Vernada, Tahoma, STXihei
+  pre: Monaco, Consolas, monospace

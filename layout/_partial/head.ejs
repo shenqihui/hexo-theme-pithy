@@ -48,4 +48,19 @@
 
   <!-- <link href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
   <%- css('css/app') %>
+
+  <% if(theme.font && theme.font.body) { %>
+  <style type="text/css">
+    body, h1, h2, h3, h4, h5, h6  {
+      font-family: <%= theme.font.body %>;
+    }
+  </style>
+  <% } %>
+  <% if(theme.font && theme.font.pre) { %>
+  <style type="text/css">
+    code, kbd, samp, pre, tt, var {
+      font-family: <%= theme.font.pre %>;
+    }
+  </style>
+  <% } %>
 </head>
