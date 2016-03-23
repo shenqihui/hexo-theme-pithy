@@ -36,5 +36,4 @@ tagcloud:
 
 # font config.
 font:
-  body: STFangSong, Helvetica, Arial, Vernada, Tahoma, STXihei
-  pre: Monaco, Consolas, monospace
+  # pre: Monaco, Consolas, monospace
