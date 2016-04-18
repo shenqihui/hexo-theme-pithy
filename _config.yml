@@ -36,4 +36,5 @@ tagcloud:
 
 # font config.
 font:
+  # body: STFangSong, simSun, 宋体, serif
   # pre: Monaco, Consolas, monospace
