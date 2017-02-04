@@ -15,26 +15,26 @@ What i want:
 ### how
 
 * No script(except disqus comment and google analytics lisk), just use effective css. So first paint vaaaaaary fast.
-* Responsive design, as it's no script, so no navbar-collapse here. 
+* Responsive design, as it's no script, so no navbar-collapse here.
   * Due way: use navbar overflow hidden. Hidden the overflow element.
   * Instead: add a link page to show all other link and ensure it won't be hidden.
   * add page: hexo new page 'link'
 * One css file.
 * No i18n problem, nothing another if not manual add. It's very pithy.
-* 
+*
 
 
 ## Preview
 [Preview](http://blog.shenqh.com), and this is my blog.
 
-Desktop:  
-![desktop](http://blog.shenqh.com/picture/hexo-theme-pithy/desktop.jpg)  
-Desktop archive page:  
-![desktop](http://blog.shenqh.com/picture/hexo-theme-pithy/desktop-archive.jpg)  
-pad:  
-![pad](http://blog.shenqh.com/picture/hexo-theme-pithy/pad.jpg)  
-phone:  
-![phone](http://blog.shenqh.com/picture/hexo-theme-pithy/phone.jpg)  
+Desktop:
+![desktop](http://blog.shenqh.com/picture/hexo-theme-pithy/desktop.jpg)
+Desktop archive page:
+![desktop](http://blog.shenqh.com/picture/hexo-theme-pithy/desktop-archive.jpg)
+pad:
+![pad](http://blog.shenqh.com/picture/hexo-theme-pithy/pad.jpg)
+phone:
+![phone](http://blog.shenqh.com/picture/hexo-theme-pithy/phone.jpg)
 
 
 ## Installation
@@ -87,11 +87,11 @@ less:
     - css/app.less
 
 # Miscellaneous
-google_analytics: 
-baidu_analytics: 
+google_analytics:
+baidu_analytics:
 favicon: /favicon.ico
-twitter: 
-google_plus: 
+twitter:
+google_plus:
 fb_admins:
 fb_app_id:
 
