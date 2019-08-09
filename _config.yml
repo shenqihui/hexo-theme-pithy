@@ -3,6 +3,8 @@ menu:
   Home: /
   Archives: /archives
   Link: /link
+  Weibo: http://www.weibo.com/p/1005051896403155
+  Github: https://github.com/shenqihui
   About: /about
 
 rss: /atom.xml
@@ -13,16 +15,20 @@ less:
 
 
 # Miscellaneous
-google_analytics:
-baidu_analytics:
+# google_analytics:
+# baidu_analytics:
+google_analytics: UA-48454013-1
+baidu_analytics: a359010dd82707c1ee6d1ca5d64be33b
 favicon: /favicon.ico
-twitter: 
-google_plus: 
+# twitter:
+twitter: shenqihui
+google_plus:
 fb_admins:
 fb_app_id:
 
 # footer word
-footer_word:
+# footer_word:
+footer_word: 我们俩都是年轻人，要将自己献身于伟大事业的开创，我们是天生的魔术师，但我们不会用自己的天赋去伤害任何人。 -- 阿尔弗雷德·波登 《致命魔术》
 
 # post excerpt, if define length, it cutting specific length comtent of the origin markdown content.just use default.
 excerpt:
@@ -36,5 +42,5 @@ tagcloud:
 
 # font config.
 font:
-  # body: STFangSong, simSun, 宋体, serif
-  # pre: Monaco, Consolas, monospace
+  body: Raleway, sans-serif
+  pre: Monaco, Consolas, monospace
